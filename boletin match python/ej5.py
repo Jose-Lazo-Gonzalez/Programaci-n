@@ -4,6 +4,9 @@ print("[3] habitacion verde")
 print("[4] habitacion rosa")
 print("[5] habitacion gris")
 a = int(input("selecciona una habitacion"))
+if a>5 or a<1:
+    print("no valido")
+    a = int(input("selecciona una habitacion"))
 match a:
     case 1:
         print("2 camas")
@@ -20,3 +23,5 @@ match a:
     case 5:
         print(" 1 cama")
         print("tercera planta")
+    case _:
+        print("no")
