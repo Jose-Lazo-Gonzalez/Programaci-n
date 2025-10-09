@@ -1,12 +1,12 @@
 import random
 
-a=random.randint(0,10)
-b=random.randint(0,10)
-c=a+b
+a= random.randint(0,10)
+b= random.randint(0,10)
 print(a)
 print(b)
-d=int(input("introduce el resultado"))
-while d!=c:
+c=a+b
+d=int(input("dame un numerito:"))
+while c!=d:
     print("error")
-    d=int(input("introduce el resultado"))
-print("muy bien")
+    d=int(input("dame un numerito:"))
+print("FIN")
