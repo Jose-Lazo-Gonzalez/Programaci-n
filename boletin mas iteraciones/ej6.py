@@ -7,11 +7,11 @@ for i in range(a):
         print(b+c*(a-2) + b)
     
     else:
-        line = ""
-        for j in range(a):
-            if j % 2 == 0:
-                line += "*"
+        linea = ""
+        for x in range(a):
+            if x % 2 == 0:
+                linea += "*"
             else:
-                line += "@"
-        print(line)
+                linea += "@"
+        print(linea)
     
