@@ -6,7 +6,7 @@ while b!=0:
     print(b)
     a=a//10
     c+=b
-print (c)
+print ("resultado:",c)
   
     
 print ("fin")
