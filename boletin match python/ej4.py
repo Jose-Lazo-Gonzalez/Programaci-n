@@ -1,8 +1,9 @@
 hemisferio=input("dime un hemisferio:")
 mes = int(input("dime el numero de mes:"))
 dia = int(input("dime un dia:"))
-while dia<=31 or mes>12:
-    if hemisferio == "norte":
+while dia<=31 or mes<=12:
+    #me falta la validacion del hemisferio
+    if hemisferio == "NORTE":
         match mes:
             case 1 | 2 :
                 print("invierno")
@@ -32,7 +33,7 @@ while dia<=31 or mes>12:
                     print("otoño")
                 elif dia>20:
                     print("invierno")
-    elif hemisferio == "sur":
+    elif hemisferio == "SUR":
         match mes:
             case 1 | 2 :
                 print("verano")
@@ -62,7 +63,7 @@ while dia<=31 or mes>12:
                     print("primavera")
                 elif dia>20:
                     print("verano")
-    hemisferio=input("dime un hemisferio").upper
+    hemisferio=input("dime un hemisferio:")
     mes = int(input("dime el numero de mes:"))
     dia = int(input("dime un dia:"))
 
