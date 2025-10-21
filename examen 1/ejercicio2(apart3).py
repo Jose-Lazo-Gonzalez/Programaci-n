@@ -63,9 +63,9 @@ elif c3>c2 and c3>c1 and c3>c4 and c3>c5 and c3>c0:
     print ("el mas frecuente es 3")
 elif c4>c2 and c4>c3 and c4>c1 and c4>c5 and c4>c0:
     print ("el mas frecuente es 4")
-elif c5>c2 and c5>c3 and c5>c4 and c5>c1 and c15>c0:
+elif c5>c2 and c5>c3 and c5>c4 and c5>c1 and c5>c0:
     print ("el mas frecuente es 5")
-elif c0>c2 and c0>c3 and c0>c4 and c0>c5 and c0>c01:
+elif c0>c2 and c0>c3 and c0>c4 and c0>c5 and c0>c1:
     print ("el mas frecuente es 0")
 
 
