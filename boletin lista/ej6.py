@@ -3,8 +3,8 @@ for i in range(0,10):
     a=int(input("dame un numero"))
     lista.append (a)
 
-maximo = 0
-minimo = 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+maximo = lista[0]
+minimo = lista[0]
 
 for i in lista[0:]:
     if i > maximo:
