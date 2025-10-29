@@ -1,8 +1,12 @@
 lista=[]
-c=14
-for i in range(0,15):
-    a=int(input("dame un numero"))
-    lista.append (a)
-for b in range (len(lista)):
-    print(lista[c])
-    c-=1
+b=1
+for i in range (15):
+    num=int(input("dame un numero"))
+    if i==14:
+        lista.insert(0,num)
+    else:
+        lista.insert(b,num)
+    b+=1
+    
+        
+print(lista)
