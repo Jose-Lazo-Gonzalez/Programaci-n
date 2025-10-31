@@ -2,18 +2,19 @@ opcion=""
 nombre=[]
 puntuaciones=[]
 generos=[]
+busqueda=[]
 while opcion!="S":
     print("Selecciona una de las siguientes opciones (R, E, S, P) ")
     print("R. Registrar juegos")
     print("E. Mostrar estadísticas")
     print("P. Cual tiene mayor puntuacion")
-    print("D.Detalles de un juego")
-    print("G.Filtrar por genero")
-    print("S. Salir del programa")
-    opcion=input("selecciona una opcion").upper()
+    print("D.Detalles de un juego:")
+    print("G.Filtrar por genero:")
+    print("S. Salir del programa:")
+    opcion=input("selecciona una opcion:").upper()
     while  opcion!="S":
         if opcion=="R":
-            a=int(input("cuantos juegos quieres registrar"))
+            a=int(input("cuantos juegos quieres registrar:"))
             for i in range (a):
                     game=input("nombre del juego:")
                     punt=input("puntuacion del juego:")
@@ -23,7 +24,7 @@ while opcion!="S":
                     generos.append(gen)
         
         elif opcion=="E":
-             for o in range(0,len(nombre)):
+            for o in range(0,len(nombre)):
                 num=(nombre[o])
                 cua=(puntuaciones[o])
                 cub=(generos[o])
@@ -39,14 +40,15 @@ while opcion!="S":
         
         elif opcion=="D":
             b=input("escribe el nombre para ver los detalles:")
-            n=nombre.index(b)
-            print(nombre[n],puntuaciones[n],generos[n])
+            if b in nombre:
+                n=nombre.index(b)
+                print(nombre[n],puntuaciones[n],generos[n])
+            else:
+                print("no se encuentra en la base de datos")
+        
         elif opcion=="G":
             k=input("escribe el genero para ver los juegos:")
-            y=nombre.index(k)
-            print("los juegos del genero son:")
-            print(nombre[y],generos[y])
-
+            
         opcion=input("selecciona una opcion").upper()
     print("Salir del programa:")
             
