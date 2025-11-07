@@ -33,3 +33,4 @@ if num1<num2:
             print("=========================================================")
             num1=int(input("introduce un numerin:"))
             num2=int(input("introduce otro numerin"))
+print("finalizar el programa")
