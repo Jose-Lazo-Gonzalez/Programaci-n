@@ -17,9 +17,9 @@ while a!="N":
                     c2+=1
                 if b=="P":
                     c3+=1
-                c=input("¿Qué tipo de incidente ha ocurrido: , tipo de incidente : L ( para incidentes Leves)  o G (para incidentes Graves")
+                c=input("¿Qué tipo de incidente ha ocurrido: , tipo de incidente : L ( para incidentes Leves)  o G (para incidentes Graves):")
                 while c!="L" and c!="G":
-                    c=input("¿Qué tipo de incidente ha ocurrido: , tipo de incidente : L ( para incidentes Leves)  o G (para incidentes Graves")
+                    c=input("¿Qué tipo de incidente ha ocurrido: , tipo de incidente : L ( para incidentes Leves)  o G (para incidentes Graves):")
                 if c=="L":
                     c4+=1
                 if c=="G":
