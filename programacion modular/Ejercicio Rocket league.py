@@ -103,8 +103,7 @@ while opcion!="S":
                                         max_equipo = equipo
                                 top.append(max_equipo)
                                 datos.remove(max_equipo)
-                        for y in datos:
-                             print(y)    
+                        print (top)   
                              
                 elif fase=="SEMIFINAL" and semifinal==True:
                         print("============================")
@@ -121,8 +120,7 @@ while opcion!="S":
                                         max_equipo = equipo
                                 top.append(max_equipo)
                                 datos.remove(max_equipo)
-                        for y in datos:
-                             print(y)
+                        print (top) 
                         
                 elif fase=="FINAL" and final==True:
                         print("============================")
@@ -139,8 +137,7 @@ while opcion!="S":
                                         max_equipo = equipo
                                 top.append(max_equipo)
                                 datos.remove(max_equipo)
-                        for y in datos:
-                             print(y)
+                        print (top) 
 
                        
                 else:

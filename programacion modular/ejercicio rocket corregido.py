@@ -13,7 +13,6 @@ def Registropuntuaciones(fase):
         final = True
         total = 2
 
-    # Registrar puntuaciones
     for i in range(total):
         nombre = input(f"Dime el nombre del equipo {c1}: ")
         puntos = input(f"Dime los puntos del equipo {c1}: ")
@@ -85,7 +84,6 @@ def calculaClasificados(fase, datos, inicial, semifinal, final):
     copia = datos.copy()
     top = []
 
-    # Seleccionar mejores puntajes
     for _ in range(num_top):
         max_equipo = None
         max_puntos = -1
@@ -101,16 +99,13 @@ def calculaClasificados(fase, datos, inicial, semifinal, final):
         print(equipo)
 
 
-# ============================================
-#           MENÚ PRINCIPAL
-# ============================================
+
 
 opcion = ""
 datos = []
 inicial = semifinal = final = False
 
 while opcion != "S":
-    print("\n===== MENÚ =====")
     print("R) Registrar puntuaciones")
     print("L) Listar equipos y puntuaciones")
     print("C) Clasificación por fase")
@@ -127,7 +122,7 @@ while opcion != "S":
     elif opcion == "L":
         if not datos:
             print("Primero debes registrar datos.")
-            continue
+            
 
         fase = input("¿Qué fase quieres listar? (inicial / semifinal / final): ").lower()
         listarPuntuacionesEquipo(fase, datos, inicial, semifinal, final)
@@ -135,7 +130,7 @@ while opcion != "S":
     elif opcion == "C":
         if not datos:
             print("Primero debes registrar datos.")
-            continue
+            
 
         fase = input("¿De qué fase quieres la clasificación?: ").lower()
         calculaClasificados(fase, datos, inicial, semifinal, final)

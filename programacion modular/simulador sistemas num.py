@@ -32,7 +32,7 @@ def calculaIngresos(ventas, nombreProducto):
 def productoDestacado(ventas, nombreProducto):
     valoracionMedia = getProducto(ventas, nombreProducto)
     devuelve = False
-    if len(valoracionMedia)>0:
+    if len(valoracionMedia)>0 and devuelve==False:
         if valoracionMedia[3]>=4.2:
             devuelve = True
         else:
