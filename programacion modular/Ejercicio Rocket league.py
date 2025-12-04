@@ -54,7 +54,9 @@ while opcion!="S":
             return matrizestadistica , inicial, semifinal, final         
         datos, inicial, semifinal, final = Registropuntuaciones(fase)
     elif opcion=="L":
+            
             fase=""
+            
             while fase!="INICIAL" and fase!="SEMIFINAL" and fase!="FINAL" :
                 fase=input("Di la fase actual: inicial, semifinal o final:").upper()
                 def listarPuntuacionesEquipo (fase):
@@ -80,10 +82,9 @@ while opcion!="S":
                         print("==========================")
                         print("La Fase XXXXXXX no ha sido registrada en el sistema")
                         print("==========================")
-                    listarPuntuacionesEquipo(fase)
+                listarPuntuacionesEquipo(fase)    
     elif opcion =="C":
         fase=""
-        nombre, puntos=datos
         while fase!="INICIAL" and fase!="SEMIFINAL" and fase!="FINAL" :
             fase=input("Di la fase actual: inicial, semifinal o final:").upper()
             def calculaClasificados (fase,datos):
